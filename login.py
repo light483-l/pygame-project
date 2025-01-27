@@ -4,7 +4,6 @@ from register import reg
 from button import Button
 import sqlite3
 
-
 pygame.init()
 screen_size = (600, 400)
 screen = pygame.display.set_mode(screen_size)
@@ -31,9 +30,9 @@ color2 = color_inactive
 text1 = f2.render('Логин:', True, text_color)
 text2 = f2.render('Пароль:', True, text_color)
 text3 = f2.render('Войти', True, text_color)
-btn_enter = Button(360,240, text3, text_color)
+btn_enter = Button(360, 240, text3, text_color)
 text4 = f2.render('Регистрация', True, text_color)
-btn_reg = Button(160,240, text4, text_color)
+btn_reg = Button(160, 240, text4, text_color)
 text_warning = f2.render('', True, text_color)
 
 text_login = ''
@@ -81,7 +80,6 @@ while running:
 
     btn_reg.draw(screen)
     btn_enter.draw(screen)
-
 
     if btn_reg.mouse_check(pygame.mouse.get_pos()):
         btn_reg.color = 'red'

@@ -74,6 +74,7 @@ def menu(screen, name, maps):
                         cur.execute(f'''
                         UPDATE users SET maps = {maps} WHERE name LIKE "{name}"
                         ''')
+                        con.close()
                 elif btn_rules.mouse_check((x1, y1)):
                     time.sleep(0.4)
                     rules = True

@@ -3,6 +3,7 @@ from menu import menu
 from button import Button
 import sqlite3
 
+
 def reg():
     pygame.init()
     screen_size = (600, 400)
@@ -30,7 +31,7 @@ def reg():
     text1 = f2.render('Имя:', True, text_color)
     text2 = f2.render('Пароль:', True, text_color)
     text3 = f2.render('Зарегистрироваться', True, text_color)
-    btn_enter = Button(220,240, text3, text_color)
+    btn_enter = Button(220, 240, text3, text_color)
 
     text_warning = f2.render('', True, text_color)
 
